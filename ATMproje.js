@@ -16,11 +16,11 @@ switch(secim){
     case "2":
         let cekilecekTutar = Number(prompt("Çekmek istediğiniz tutarı giriniz :"));    
         if (cekilecekTutar<bakiye) {
-            bakiye=bakiye-cekilecekTutar;
+            bakiye-=cekilecekTutar;
             alert( "Kalan bakiyeniz : "+bakiye)
         } else {
             alert("Bakiyenizden yetersizdir!"+yeniSatir
-            +"Bakiyeniz : "+bakiye);
+            +"Mevcut bakiyeniz : "+bakiye);
         }
         break;
     case "3":
@@ -32,7 +32,7 @@ switch(secim){
         console.log("Sistemden başarıyla çıkış yapılmıştır.");
         break;
     default:
-        console.log("lütfen 1 - 4 arasında bir değer giriniz!");
+        console.log("Lütfen geçerli bir değer giriniz!");
         break;
 
 }
